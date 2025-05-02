@@ -55,6 +55,14 @@ android {
     // To run Android relevant tests under test dir.
     // See also http://robolectric.org/migrating/#project-configuration
     unitTests.isIncludeAndroidResources = true
+    managedDevices {
+      localDevices {
+        create("pixelApi30") {
+          device = "Pixel 2"
+          apiLevel = 30
+        }
+      }
+    }
   }
 }
 
